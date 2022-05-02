@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:   #ffffff;
+    font-family: 'Montserrat', sans-serif, 'Poppins', 'Roboto';
+}
+body {
+    background: url(./cyber-ge9baf5ea8_1920.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+#logo {
+    font-size: 45px;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+.container .name h3 {
+    font-size: 30px;
+}
