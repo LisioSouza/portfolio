@@ -24,7 +24,7 @@
                 <a target="_blank" href="https://www.linkedin.com/in/lisiosouza/">Linkedin</a>
             </li>
             <li>
-                <a target="_blank" href="https://wa.me/8599999999">whatsapp</a>
+                <a target="_blank" href="https://wa.me/8599999999">Whatsapp</a>
             </li>
         </ul>
     </header>
@@ -38,25 +38,33 @@
                     Front-end Developer - iniciante
                 </h3>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-caret-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
             </div>
-            <div id="about">
+            <div style="display:none;" id="about">
                 <p>
-                    Atuo como técnico de Suporte de Sistemas de Gestão Hospitalar, realizando treinamentos de software para diversos públicos. Minha especialidade inclui boa adaptabilidade frente às mudanças, compromisso com o trabalho e vontade de aprender. Atualmente estou iniciando os estudos em desenvolvimento Front-end.
+                    Atuo como técnico de Suporte de Sistema de Gestão Hospitalar realizando treinamentos de software para diversos públicos. Minha especialidade inclui boa adaptabilidade frente às mudanças, compromisso com o trabalho e vontade de aprender. Atualmente estou iniciando os estudos em desenvolvimento Front-end.
                 </p>
             </div>
             <div class="form">
-                <p>Deixe seu contato!</p>
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
                 <form action="">
                     <input type="text" placeholder="Seu melhor email :)">
                     <button>Enviar!</button>
                 </form>
-
             </div>
         </section>
-
-
     </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
